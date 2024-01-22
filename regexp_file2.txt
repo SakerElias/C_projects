@@ -1,0 +1,169 @@
+# Mise en page
+
+comment::skip #.*^[\n] vide
+colon : vide
+
+# Directives
+directs::set \.set vide
+directs::interned \.interned vide
+directs::consts \.consts vide
+directs::names \.names vide
+directs::text \.text vide
+directs::line \.line vide
+directs::cellvars \.cellvars vide 
+directs::code_start \.code_start vide
+directs::varnames \.varnames vide
+directs::code_end \.code_end vide
+directs::freevars \.freevars vide
+
+# Instructions
+insn::0::STOP_CODE STOP_CODE 0x00 
+insn::0::POP_TOP POP_TOP 0x01 
+insn::0::ROT_TWO ROT_TWO 0x02 
+insn::0::ROT_THREE ROT_THREE 0x03 
+insn::0::DUP_TOP DUP_TOP 0x04 
+insn::0::ROT_FOUR ROT_FOUR 0x05 
+insn::0::NOP NOP 0x09 
+insn::0::UNARY_POSITIVE UNARY_POSITIVE 0x0a 
+insn::0::UNARY_NEGATIVE UNARY_NEGATIVE 0x0b 
+insn::0::UNARY_NOT UNARY_NOT 0x0c 
+insn::0::UNARY_CONVERT UNARY_CONVERT 0x0d 
+insn::0::UNARY_INVERT UNARY_INVERT 0x0f 
+insn::0::BINARY_POWER BINARY_POWER 0x13 
+insn::0::BINARY_MULTIPLY BINARY_MULTIPLY 0x14 
+insn::0::BINARY_DIVIDE BINARY_DIVIDE 0x15 
+insn::0::BINARY_MODULO BINARY_MODULO 0x16 
+insn::0::BINARY_ADD BINARY_ADD 0x17 
+insn::0::BINARY_SUBTRACT BINARY_SUBTRACT 0x18 
+insn::0::BINARY_SUBSCR BINARY_SUBSCR 0x19 
+insn::0::BINARY_FLOOR_DIVIDE BINARY_FLOOR_DIVIDE 0x1a 
+insn::0::BINARY_TRUE_DIVIDE BINARY_TRUE_DIVIDE 0x1b 
+insn::0::INPLACE_FLOOR_DIVIDE INPLACE_FLOOR_DIVIDE 0x1c 
+insn::0::INPLACE_TRUE_DIVIDE INPLACE_TRUE_DIVIDE 0x1d 
+insn::0::SLICE SLICE 0x1e 
+insn::0::SLICE_PLUS_1 SLICE_PLUS_1 0x1f 
+insn::0::SLICE_PLUS_2 SLICE_PLUS_2 0x20 
+insn::0::SLICE_PLUS_3 SLICE_PLUS_3 0x21 
+insn::0::STORE_SLICE STORE_SLICE 0x28 
+insn::0::STORE_SLICE_PLUS_1 STORE_SLICE_PLUS_1 0x29 
+insn::0::STORE_SLICE_PLUS_2 STORE_SLICE_PLUS_2 0x2a 
+insn::0::STORE_SLICE_PLUS_3 STORE_SLICE_PLUS_3 0x2b 
+insn::0::DELETE_SLICE DELETE_SLICE 0x32 
+insn::0::DELETE_SLICE_PLUS_1 DELETE_SLICE_PLUS_1 0x33 
+insn::0::DELETE_SLICE_PLUS_2 DELETE_SLICE_PLUS_2 0x34 
+insn::0::DELETE_SLICE_PLUS_3 DELETE_SLICE_PLUS_3 0x35 
+insn::0::STORE_MAP STORE_MAP 0x36 
+insn::0::INPLACE_ADD INPLACE_ADD 0x37 
+insn::0::INPLACE_SUBTRACT INPLACE_SUBTRACT 0x38 
+insn::0::INPLACE_MULTIPLY INPLACE_MULTIPLY 0x39 
+insn::0::INPLACE_DIVIDE INPLACE_DIVIDE 0x3a 
+insn::0::INPLACE_MODULO INPLACE_MODULO 0x3b 
+insn::0::STORE_SUBSCR STORE_SUBSCR 0x3c 
+insn::0::DELETE_SUBSCR DELETE_SUBSCR 0x3d 
+insn::0::BINARY_LSHIFT BINARY_LSHIFT 0x3e 
+insn::0::BINARY_RSHIFT BINARY_RSHIFT 0x3f 
+insn::0::BINARY_AND BINARY_AND 0x40 
+insn::0::BINARY_XOR BINARY_XOR 0x41 
+insn::0::BINARY_OR BINARY_OR 0x42 
+insn::0::INPLACE_POWER INPLACE_POWER 0x43 
+insn::0::GET_ITER GET_ITER 0x44 
+insn::0::PRINT_EXPR PRINT_EXPR 0x46 
+insn::0::PRINT_ITEM PRINT_ITEM 0x47 
+insn::0::PRINT_NEWLINE PRINT_NEWLINE 0x48 
+insn::0::PRINT_ITEM_TO PRINT_ITEM_TO 0x49 
+insn::0::PRINT_NEWLINE_TO PRINT_NEWLINE_TO 0x4a 
+insn::0::INPLACE_LSHIFT INPLACE_LSHIFT 0x4b 
+insn::0::INPLACE_RSHIFT INPLACE_RSHIFT 0x4c 
+insn::0::INPLACE_AND INPLACE_AND 0x4d 
+insn::0::INPLACE_XOR INPLACE_XOR 0x4e 
+insn::0::INPLACE_OR INPLACE_OR 0x4f 
+insn::0::BREAK_LOOP BREAK_LOOP 0x50 
+insn::0::WITH_CLEANUP WITH_CLEANUP 0x51 
+insn::0::LOAD_LOCALS LOAD_LOCALS 0x52 
+insn::0::RETURN_VALUE RETURN_VALUE 0x53 
+insn::0::IMPORT_STAR IMPORT_STAR 0x54 
+insn::0::EXEC_STMT EXEC_STMT 0x55 
+insn::0::YIELD_VALUE YIELD_VALUE 0x56 
+insn::0::POP_BLOCK POP_BLOCK 0x57 
+insn::0::END_FINALLY END_FINALLY 0x58 
+insn::0::BUILD_CLASS BUILD_CLASS 0x59 
+insn::1::STORE_NAME STORE_NAME 0x5a 
+insn::1::DELETE_NAME DELETE_NAME 0x5b 
+insn::1::UNPACK_SEQUENCE UNPACK_SEQUENCE 0x5c 
+insn::1::FOR_ITER FOR_ITER 0x5d 
+insn::1::LIST_APPEND LIST_APPEND 0x5e 
+insn::1::STORE_ATTR STORE_ATTR 0x5f 
+insn::1::DELETE_ATTR DELETE_ATTR 0x60 
+insn::1::STORE_GLOBAL STORE_GLOBAL 0x61 
+insn::1::DELETE_GLOBAL DELETE_GLOBAL 0x62 
+insn::1::DUP_TOPX DUP_TOPX 0x63 
+insn::1::LOAD_CONST LOAD_CONST 0x64 
+insn::1::LOAD_NAME LOAD_NAME 0x65 
+insn::1::BUILD_TUPLE BUILD_TUPLE 0x66 
+insn::1::BUILD_LIST BUILD_LIST 0x67 
+insn::1::BUILD_SET BUILD_SET 0x68 
+insn::1::BUILD_MAP BUILD_MAP 0x69 
+insn::1::LOAD_ATTR LOAD_ATTR 0x6a 
+insn::1::COMPARE_OP COMPARE_OP 0x6b 
+insn::1::IMPORT_NAME IMPORT_NAME 0x6c 
+insn::1::IMPORT_FROM IMPORT_FROM 0x6d 
+insn::1::JUMP_FORWARD JUMP_FORWARD 0x6e 
+insn::1::JUMP_IF_FALSE_OR_POP JUMP_IF_FALSE_OR_POP 0x6f 
+insn::1::JUMP_IF_TRUE_OR_POP JUMP_IF_TRUE_OR_POP 0x70 
+insn::1::JUMP_ABSOLUTE JUMP_ABSOLUTE 0x71 
+insn::1::POP_JUMP_IF_FALSE POP_JUMP_IF_FALSE 0x72 
+insn::1::POP_JUMP_IF_TRUE POP_JUMP_IF_TRUE 0x73 
+insn::1::LOAD_GLOBAL LOAD_GLOBAL 0x74 
+insn::1::CONTINUE_LOOP CONTINUE_LOOP 0x77 
+insn::1::SETUP_LOOP SETUP_LOOP 0x78 
+insn::1::SETUP_EXCEPT SETUP_EXCEPT 0x79 
+insn::1::SETUP_FINALLY SETUP_FINALLY 0x7a 
+insn::1::LOAD_FAST LOAD_FAST 0x7c 
+insn::1::STORE_FAST STORE_FAST 0x7d 
+insn::1::DELETE_FAST DELETE_FAST 0x7e 
+insn::1::RAISE_VARARGS RAISE_VARARGS 0x82 
+insn::1::CALL_FUNCTION CALL_FUNCTION 0x83 
+insn::1::MAKE_FUNCTION MAKE_FUNCTION 0x84 
+insn::1::BUILD_SLICE BUILD_SLICE 0x85 
+insn::1::MAKE_CLOSURE MAKE_CLOSURE 0x86 
+insn::1::LOAD_CLOSURE LOAD_CLOSURE 0x87 
+insn::1::LOAD_DEREF LOAD_DEREF 0x88 
+insn::1::STORE_DEREF STORE_DEREF 0x89 
+insn::1::CALL_FUNCTION_VAR CALL_FUNCTION_VAR 0x8c 
+insn::1::CALL_FUNCTION_KW CALL_FUNCTION_KW 0x8d 
+insn::1::CALL_FUNCTION_VAR_KW CALL_FUNCTION_VAR_KW 0x8e 
+insn::1::SETUP_WITH SETUP_WITH 0x8f 
+insn::1::EXTENDED_ARG EXTENDED_ARG 0x91 
+insn::1::SET_ADD SET_ADD 0x92 
+insn::1::MAP_ADD MAP_ADD 0x93
+
+# Parenthèses
+paren::left ( vide
+paren::right ) vide
+brack::left [ vide
+brack::right ] vide
+
+pycst::None None vide 
+pycst::True True vide
+pycst::False False vide
+
+
+# Numbers
+number::float [\+\-]?[0-9]+\.?[0-9]*[eE][-\+]?[0-9]+ vide
+number::float [\+\-]?[0-9]+\.[0-9]* vide
+number::hexa 0x[0-9A-F]+ vide
+number::uint [\+\-]?[0-9]+ vide
+
+# Nom de variable
+identifier [a-zA-Z_][a-zA-Z_0-9]* vide
+
+string \".*\" vide
+
+# Pour les calculs
+#operators::plus \+ vide
+#operators::moins \- vide
+#operators::fois \* vide
+#operators::divise \/ vide
+#operators::egale \= vide
+#operators::inferieur \< vide
+#operators::superieur \> vide
